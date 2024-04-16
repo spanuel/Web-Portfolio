@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@340;400;500;600;700;800;900&display=swap'); 
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins','sans-serif';
+}
+
+body {
+background-color: rgb(0, 0, 0);
+color: #fff;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgb(52, 53, 52);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+.navbar a.active,.navbar a:hover{
+    background: linear-gradient(45deg,yellow, rgb(65, 61, 61))   
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.home-content h1{
+font-size: 50px;    
+font-weight: 600;
+line-height: 1.5;
+color: yellow;
+}
+
+.home-content h3{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.home-content p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+.home-content{
+    max-width: 500px;
+}
+
+.home-icons a{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 20px;
+    background: linear-gradient(45deg,yellow, rgb(65, 61, 61));
+    z-index: 1;
+}
+
+.home-icons a::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(45deg,yellow, rgb(65, 61, 61));
+    border-radius: 50%;
+    z-index: -1;
+    transition: .5s ease;
+}
+
+.home-icons a:hover:before{
+filter: blur(5px);
+}
+
+.home-icons a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgb(85,95,80);
+    border-radius: 50%;
+    transform: scale(.88);
+    z-index: -1;
+    transition: .5s ease;
+}
+
+.home-icons a:hover:after{
+transform: scale(0);
+}
+
+.home-image{
+    width: 400px;
+    height: 400px;
+}
+
+.home-image .image-frame{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: yellow;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .home-image .image-frame::after{
+    content: '';
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+} 
+
+.image-frame .image{
+    position: relative;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    z-index: 1;
+    overflow: hidden; 
+}
+
+.image img{
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.about h2,.services h2, .skills h2{
+    text-align: center;
+}
+
+.row{
+    width: 90%;
+    margin: auto ;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center; 
+     background-color: rgb(52, 53, 52); 
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.col {
+    float: left;
+    width: 33%;
+    padding: 0 10px;
+  }
+
+.main-info{
+   width: 90%;
+   margin: auto ;
+   margin-top: 2rem;
+}
+
+.container {
+    width: 80%; 
+    background-color: rgb(52, 53, 52); 
+    border-radius: 15px;
+  }
+
+.skills p{
+    font-size: 16px;
+}
+
+.skill {
+    text-align: right; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    color: rgb(52, 53, 52); 
+    border-radius: 15px;
+  } 
+
+.c-sharp{
+width: 75%;
+background-color: yellow;
+}
+
+.java{
+width: 20%;
+background-color: yellow;
+}
+
+.sql{
+    width: 60%;
+    background-color: yellow;
+}
+footer {
+    margin-top: auto;
+    font-size: 0.8em;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }
